@@ -492,7 +492,7 @@ class FontConfig:
         if args.remove_tag_liga:
             self.remove_tag_liga = True
 
-        if args.width:
+        if args.width and args.width != "default":
             self.width = args.width
 
         if args.line_height is not None:
